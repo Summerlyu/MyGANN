@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="line" extends="struts-default">
+		<action name="LineAction" class="uk.ac.gann.action.LineAction"
+			method="execute">
+			<result name="dataLine" type="dispatcher">/index.jsp
+			</result>
+		</action>
+	
+	</package>
+	
+	<package name="train" extends="struts-default">
+		<action name="TrainAction" class="uk.ac.gann.action.TrainAction"
+			method="execute">
+			<result name="trainingControl" type="dispatcher">/index.jsp
+			</result>
+		</action>
+	
+	</package>
+</struts>    
